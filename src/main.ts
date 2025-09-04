@@ -1,13 +1,10 @@
-import { logger } from "./common/loggers/logger";
+import { AppServer } from "./server";
 
 
-logger.log("Mi log personalizado", "main");
-logger.log("Mi log personalizado", "main");
-logger.log("Mi log personalizado", "main");
-logger.log("Mi log personalizado", "main");
-logger.log("Mi log personalizado", "main");
-logger.log("Mi log personalizado", "main");
-logger.log("Mi log personalizado", "main");
-logger.log("Mi log personalizado", "main");
+function bootstrap(){
+    const server = new AppServer();
 
-console.log("Mi log normal");
+    server.start();
+}
+
+bootstrap();
